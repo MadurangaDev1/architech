@@ -225,7 +225,17 @@ footer ul li {
   transform: translate(-50%, -50%);
   width: 60%;
 }
+.logo{
+  transition: .4s;
+}
+.navbar:hover .navbar-brand .logo {
+  content: url('../images/logo-black.png'); /* replace with new logo image */
+}
 
+/* Change logo when .scrolled class is added to navbar */
+.navbar.scrolled .logo {
+  content: url('../images/logo-black.png'); /* replace with new logo image */
+}
 .collection {
   padding: 30px 0;
 }
